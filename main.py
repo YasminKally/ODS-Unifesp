@@ -29,7 +29,7 @@ ods = {
 }
 
 contagem = (
-    df[coluna_ods]
+    df[colunaods]
     .dropna()
     .astype(str)
     .str.split(r'[.;|\n]')
@@ -42,8 +42,8 @@ contagem = (
 
 contagem.columns = ['ODS', 'Total de Artigos']
 total_artigos = len(df)
-artigos_classificados = df[coluna_ods].notnull().sum()
-artigos_nao_classificados = df[coluna_ods].isnull().sum()
+artigos_classificados = df[colunaods].notnull().sum()
+artigos_nao_classificados = df[colunaods].isnull().sum()
 
 count = contagem['Total de Artigos']
 labels = contagem['ODS']
