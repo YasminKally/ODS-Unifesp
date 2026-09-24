@@ -6,7 +6,7 @@ plt.style.use('_mpl-gallery-nogrid')
 
 df = pd.read_csv("./Open_Alex_UNIFESP_enriquecido.csv")
 
-coluna_ods = "SDG"
+colunaods = "SDG"
 
 ods = {
     'No poverty': 'ODS 1',
